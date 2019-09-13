@@ -1,4 +1,3 @@
-# from cryptography.fernet import Fernet
 from criptograpy import Criptograpy
 from application import Application
 from tkinter import *
