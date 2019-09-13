@@ -1,26 +1,21 @@
 # Trabalho de Segurança de redes
 
 ## Código
-O sistema é um script simples em python que utiliza a biblioteca [cryptography.fernet] para monta a criptografia de uma frase.
+O sistema é um script simples em python que utiliza a classe `Criptograpy` para montar uma cruiptografia simples usando conceitos de cifra de César em cima da tabela ASCII com base numa chave.
+Tal chave deve ser compartilhada entre quem precisa criptografar e descriptografar.
+<br>
+Essa chave deve ser salva como uma variável de ambiente `SECRETKEY`.
 
-## Dependencias
-O sistema tem como dependência a bibliteca cryptography do python, para a instalação segue o comando:
-```
-pip install cryptography
-```
 
 ## Execução
 Para a execução do projeto é necessário apenas executar o script via python:
 ```
 python script.py
 ```
-O script é compatível tanto com python 2.7+ quanto com o 3+.
+O script é compatível com o 3+.
 Para realização de testes do script foi utilizado o docker, que é uma opção também.
 
 ## Execução via docker
 ```
-docker pull python
-docker run --rm -it -v $(pwd):/app -w /app python bash
+docker run --rm -it -v $(pwd):/app -w /app python python script.py
 ```
-E em seguida, executar a instalação da lib e executar o script.
- 
