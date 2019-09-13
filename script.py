@@ -1,14 +1,14 @@
 # from cryptography.fernet import Fernet
 from criptograpy import Criptograpy
+from application import Application
+from tkinter import *
 import os
 
 def main():
     os.environ["SECRETKEY"] = "TESTKEY"
-    text = input("Frase: ")
-    c = Criptograpy(text)
-    cripted = c.create_hash()
-    print("Criptografia: " + cripted)
-    print("Descriptografado: " + c.decrypt(cripted))
+    root = Tk()
+    Application(root)
+    root.mainloop()
 
 if __name__ == "__main__":
     main()
