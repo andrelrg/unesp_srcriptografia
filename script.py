@@ -4,7 +4,7 @@ from tkinter import *
 import os
 
 def main():
-    os.environ["SECRETKEY"] = "TESTKEY"
+    os.environ["SECRETKEY"] = "CHAVESECRETA"
     root = Tk()
     Application(root)
     root.mainloop()
